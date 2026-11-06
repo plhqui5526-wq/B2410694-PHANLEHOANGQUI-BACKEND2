@@ -34,7 +34,7 @@ class ContactService {
     }
 
     async find(filter) {
-        const cursor = this.find(filter);
+        const cursor = this.Contact.find(filter);
         return await cursor.toArray();
     }
 
