@@ -11,6 +11,14 @@ export default defineConfig([
     languageOptions: {
       globals: globals.node,
     },
+    rules: {
+      "no-unused-vars": [
+        "error",
+        {
+          caughtErrors: "none",
+        },
+      ],
+    },
   },
   {
     files: ["**/*.js"],
