@@ -62,7 +62,7 @@ class ContactService {
     }
 
     async delete(id) {
-        const filter = { _id: ObjectId.isValid(id) ? new ObjectId(id) : null};
+        const filter = { id: ObjectId.isValid(id) ? new ObjectId(id) : null};
 
         const result = this.Contact.findOneAndDelete(filter);
 
